@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "todo-app backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
+    "test": "mocha './*/*.test.js' --exit",
+    "test-with-coverage": "nyc --reporter=text mocha './*/*.test.js' --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.10",
+    "prettier": "^2.3.2",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.1.0",
+    "nodemon": "^2.0.12",
+    "nyc": "^15.1.0",
+    "sinon": "^11.1.2"
+  }
+}
