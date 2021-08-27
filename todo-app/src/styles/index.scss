@@ -1,0 +1,89 @@
+$dark-teal: #59918c;
+$dark-grey: #9c9c9c;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+#app-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .material-icons { 
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.todo-date {
+  padding: 1rem 0;
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+  }
+  .material-icons { 
+    margin-right: 0.75rem;
+    color: $dark-teal
+  }
+}
+
+
+.card-data {
+  padding: 0.5rem 0;
+
+  .material-icons { 
+    color: $dark-grey
+  }
+
+  .card-description {
+    margin-left: 2rem;
+    font-size: 0.8rem;
+    color: $dark-grey;
+  }
+}

@@ -1,6 +1,5 @@
-
-exports.up = function(knex) {
-    return knex.schema
+exports.up = function (knex) {
+  return knex.schema
     .createTable('days', (table) => {
       table.increments();
       table.time('date');
@@ -22,6 +21,6 @@ exports.up = function(knex) {
     });
 };
 
-exports.down = function(knex) {
-    return knex.schema.dropTableIfExists('days').dropTableIfExists('todos');
+exports.down = function (knex) {
+  return knex.schema.dropTableIfExists('days').dropTableIfExists('todos');
 };

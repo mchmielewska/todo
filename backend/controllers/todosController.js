@@ -48,7 +48,7 @@ exports.getAllDays = async (req, res) => {
 
 exports.getAllTodosForDay = async (req, res) => {
   const { date } = req.params;
-  console.log(date)
+  console.log(date);
 
   days
     .findByDate(date)
@@ -61,7 +61,7 @@ exports.getAllTodosForDay = async (req, res) => {
     })
     .then(
       (data) => {
-          console.log(data)
+        console.log(data);
         res.status(200).json(data);
       },
       () => {

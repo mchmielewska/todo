@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { SingleTodo } from "./SingleTodo";
+import React, { useState, useEffect } from 'react';
+import { SingleTodo } from './SingleTodo';
 
 export const TodosForDay = ({ date }) => {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    const API_URL = "http://localhost:4000/api/days/" + date;
+    const API_URL = 'http://localhost:4000/api/days/' + date;
     fetch(API_URL)
       .then((response) => response.json())
       .then((data) => {

@@ -8,8 +8,8 @@ exports.findById = (dayId) => {
 
 exports.addDay = async (day) => {
   const [id] = await db('days').insert(day);
-  return exports.findById(id)
-}
+  return exports.findById(id);
+};
 
 exports.findAll = () => {
   return db('days');
